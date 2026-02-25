@@ -1,0 +1,102 @@
+<div align="center">
+
+# Armin Eshaghi
+
+**AI/ML Engineer · Robotics · Quantitative Systems**
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/armin-eshaghi)
+[![GitHub followers](https://img.shields.io/github/followers/R-M77?label=Follow&style=social)](https://github.com/R-M77)
+
+</div>
+
+---
+
+## 🧠 What I Build
+
+I work at the intersection of **deep learning**, **autonomous systems**, and **quantitative finance** — building things that make decisions in messy, real-world environments.
+
+Right now I'm focused on:
+
+- 🦿 **Surgical robotics & exoskeletons** — RL-based control systems for physical human augmentation
+- 📈 **Algorithmic trading** — DRL agents that read both price signals and market sentiment
+- 🤖 **AI tooling** — intelligent interfaces that make complex software accessible
+
+---
+
+## 🔬 Featured Projects
+
+### 🧬 [Automated Microsurgery](https://github.com/R-M77/Automated_Microsurgery)
+Supplementary materials for real-time 3D image-based visual servo control for single-cell surgery.  
+Combines computer vision, robotics control, and medical imaging at sub-millimeter precision.
+
+### 📊 [DRL Stock Trading — BSc Thesis](https://github.com/R-M77/Diff-Stock-BSc-Thesis-Project)
+Deep Reinforcement Learning trading agent with **Diffusion Policy** + **PPO** + **Bi-LSTM** state encoder.  
+Integrates FinBERT sentiment analysis with technical indicators. Outperforms A2C, PPO-LSTM, and TD3 baselines.
+
+### 🏗️ [ZoidbergAI — Revit AI Assistant](https://github.com/R-M77/ZoidbergAI.Backend)
+AI-powered assistant for Autodesk Revit (BIM). Natural language interface to building information models.  
+Full-stack: Python backend + C# Revit addin.
+
+### 👁️ [Computer Vision Projects](https://github.com/R-M77/Computer_Vision_Projects)
+Collection of hands-on CV work: segmentation, object detection, generative models, and real-time systems.
+
+### 📡 [Tiny Machine Learning](https://github.com/R-M77/Tiny_Machine_Learning)
+ML for constrained devices — embedded systems, microcontrollers, edge inference.
+
+---
+
+## 🛠️ Tech Stack
+
+**Languages**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=csharp&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+
+**ML / AI**
+
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat&logo=huggingface&logoColor=black)
+
+**Robotics**
+
+![ROS2](https://img.shields.io/badge/ROS2-22314E?style=flat&logo=ros&logoColor=white)
+![Isaac Sim](https://img.shields.io/badge/Isaac_Sim-76B900?style=flat&logo=nvidia&logoColor=white)
+
+**Infra**
+
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+
+---
+
+## 📈 GitHub Stats
+
+<div align="center">
+
+![Armin's GitHub stats](https://github-readme-stats.vercel.app/api?username=R-M77&show_icons=true&theme=dark&hide_border=true&count_private=true)
+
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=R-M77&layout=compact&theme=dark&hide_border=true&hide=jupyter%20notebook)
+
+</div>
+
+---
+
+## 🔭 Currently Exploring
+
+- **RL-based exoskeleton control** — policy training for lower-limb assistance (hip-knee + ankle)
+- **Surgical AI** — imitation learning from surgical video (MoE-ACT, SurgWorld)
+- **LLM applications** — autonomous AI agents for research and analysis
+- **Power infrastructure** — energy systems for the next generation of AI compute
+
+---
+
+<div align="center">
+
+*Building at the edge of what's possible.*
+
+</div>
