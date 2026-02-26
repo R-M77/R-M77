@@ -69,13 +69,11 @@ ML for constrained devices — embedded systems, microcontrollers, edge inferenc
 
 ---
 
-## 📈 GitHub Stats
+## 📈 Contributions
 
 <div align="center">
 
-![Armin's GitHub stats](https://github-readme-stats.vercel.app/api?username=R-M77&show_icons=true&theme=dark&hide_border=true&count_private=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=R-M77&layout=compact&theme=dark&hide_border=true&hide=jupyter%20notebook)
+![Armin's Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=R-M77&theme=github-compact&hide_border=true&area=true)
 
 </div>
 
