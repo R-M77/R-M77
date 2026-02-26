@@ -17,7 +17,7 @@ I work at the intersection of **deep learning**, **autonomous systems**, and **r
 
 Right now I'm focused on:
 
-- 🦿 **Surgical robotics & exoskeletons** — control systems for physical human augmentation
+- 🦿 **Physical robotics** — control systems for physical worlds
 - 🤖 **AI tooling** — intelligent interfaces that make complex software accessible
 
 ---
