@@ -4,7 +4,7 @@
 
 **AI/ML Engineer · Robotics · Quantitative Systems**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/armin-eshaghi)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/armineshaghi?utm_source=share_via&utm_content=profile&utm_medium=member_android)
 [![GitHub followers](https://img.shields.io/github/followers/R-M77?label=Follow&style=social)](https://github.com/R-M77)
 
 </div>
@@ -13,12 +13,11 @@
 
 ## 🧠 What I Build
 
-I work at the intersection of **deep learning**, **autonomous systems**, and **quantitative finance** — building things that make decisions in messy, real-world environments.
+I work at the intersection of **deep learning**, **autonomous systems**, and **robotics** — building things that operate reliably in messy, real-world environments.
 
 Right now I'm focused on:
 
-- 🦿 **Surgical robotics & exoskeletons** — RL-based control systems for physical human augmentation
-- 📈 **Algorithmic trading** — DRL agents that read both price signals and market sentiment
+- 🦿 **Surgical robotics & exoskeletons** — control systems for physical human augmentation
 - 🤖 **AI tooling** — intelligent interfaces that make complex software accessible
 
 ---
@@ -28,10 +27,6 @@ Right now I'm focused on:
 ### 🧬 [Automated Microsurgery](https://github.com/R-M77/Automated_Microsurgery)
 Supplementary materials for real-time 3D image-based visual servo control for single-cell surgery.  
 Combines computer vision, robotics control, and medical imaging at sub-millimeter precision.
-
-### 📊 [DRL Stock Trading — BSc Thesis](https://github.com/R-M77/Diff-Stock-BSc-Thesis-Project)
-Deep Reinforcement Learning trading agent with **Diffusion Policy** + **PPO** + **Bi-LSTM** state encoder.  
-Integrates FinBERT sentiment analysis with technical indicators. Outperforms A2C, PPO-LSTM, and TD3 baselines.
 
 ### 🏗️ [ZoidbergAI — Revit AI Assistant](https://github.com/R-M77/ZoidbergAI.Backend)
 AI-powered assistant for Autodesk Revit (BIM). Natural language interface to building information models.  
@@ -88,10 +83,9 @@ ML for constrained devices — embedded systems, microcontrollers, edge inferenc
 
 ## 🔭 Currently Exploring
 
-- **RL-based exoskeleton control** — policy training for lower-limb assistance (hip-knee + ankle)
-- **Surgical AI** — imitation learning from surgical video (MoE-ACT, SurgWorld)
+- **RL-based exoskeleton control** — policy training for lower-limb assistance
+- **Surgical AI** — imitation learning from surgical video
 - **LLM applications** — autonomous AI agents for research and analysis
-- **Power infrastructure** — energy systems for the next generation of AI compute
 
 ---
 
