@@ -6,6 +6,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/armineshaghi?utm_source=share_via&utm_content=profile&utm_medium=member_android)
 [![GitHub followers](https://img.shields.io/github/followers/R-M77?label=Follow&style=social)](https://github.com/R-M77)
+[![GitHub stars](https://img.shields.io/github/stars/R-M77?label=Stars&style=social)](https://github.com/R-M77?tab=repositories)
 
 </div>
 
@@ -73,7 +74,7 @@ ML for constrained devices — embedded systems, microcontrollers, edge inferenc
 
 <div align="center">
 
-![Armin's Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=R-M77&theme=github-compact&hide_border=true&area=true)
+![Armin's Contribution Calendar](https://ghchart.rshah.org/R-M77)
 
 </div>
 
