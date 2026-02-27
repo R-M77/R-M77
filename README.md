@@ -33,7 +33,7 @@ Combines computer vision, robotics control, and medical imaging at sub-millimete
 AI-powered assistant for Autodesk Revit (BIM). Natural language interface to building information models.  
 Full-stack: Python backend + C# Revit addin.
 
-### 👁️ [Computer Vision Projects](https://github.com/R-M77/Computer_Vision_Projects)
+###  [Computer Vision Projects](https://github.com/R-M77/Computer_Vision_Projects)
 Collection of hands-on CV work: segmentation, object detection, generative models, and real-time systems.
 
 ###  [Tiny Machine Learning](https://github.com/R-M77/Tiny_Machine_Learning)
