@@ -12,36 +12,36 @@
 
 ---
 
-## 🧠 What I Build
+##  What I Build
 
 I work at the intersection of **deep learning**, **autonomous systems**, and **robotics** — building things that operate reliably in messy, real-world environments.
 
 Right now I'm focused on:
 
-- 🦿 **Physical robotics** — control systems for physical worlds
-- 🤖 **AI tooling** — intelligent interfaces that make complex software accessible
+-  **Physical robotics** — control systems for physical worlds
+-  **AI tooling** — intelligent interfaces that make complex software accessible
 
 ---
 
-## 🔬 Featured Projects
+##  Featured Projects
 
-### 🧬 [Automated Microsurgery](https://github.com/R-M77/Automated_Microsurgery)
+###  [Automated Microsurgery](https://github.com/R-M77/Automated_Microsurgery)
 Supplementary materials for real-time 3D image-based visual servo control for single-cell surgery.  
 Combines computer vision, robotics control, and medical imaging at sub-millimeter precision.
 
-### 🏗️ [ZoidbergAI — Revit AI Assistant](https://github.com/R-M77/ZoidbergAI.Backend)
+###  [ZoidbergAI — Revit AI Assistant](https://github.com/R-M77/ZoidbergAI.Backend)
 AI-powered assistant for Autodesk Revit (BIM). Natural language interface to building information models.  
 Full-stack: Python backend + C# Revit addin.
 
 ### 👁️ [Computer Vision Projects](https://github.com/R-M77/Computer_Vision_Projects)
 Collection of hands-on CV work: segmentation, object detection, generative models, and real-time systems.
 
-### 📡 [Tiny Machine Learning](https://github.com/R-M77/Tiny_Machine_Learning)
+###  [Tiny Machine Learning](https://github.com/R-M77/Tiny_Machine_Learning)
 ML for constrained devices — embedded systems, microcontrollers, edge inference.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 **Languages**
 
@@ -70,7 +70,7 @@ ML for constrained devices — embedded systems, microcontrollers, edge inferenc
 
 ---
 
-## 📈 Contributions
+##  Contributions
 
 <div align="center">
 
@@ -80,7 +80,7 @@ ML for constrained devices — embedded systems, microcontrollers, edge inferenc
 
 ---
 
-## 🔭 Currently Exploring
+##  Currently Exploring
 
 - **RL-based exoskeleton control** — policy training for lower-limb assistance
 - **Surgical AI** — imitation learning from surgical video
