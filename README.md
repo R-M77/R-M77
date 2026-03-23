@@ -6,49 +6,56 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/armineshaghi?utm_source=share_via&utm_content=profile&utm_medium=member_android)
 [![GitHub followers](https://img.shields.io/github/followers/R-M77?label=Follow&style=social)](https://github.com/R-M77)
-[![GitHub stars](https://img.shields.io/github/stars/R-M77?label=Stars&style=social)](https://github.com/R-M77?tab=repositories)
+[![GitHub stars](https://img.shields.io/github/stars/R-M77?style=social)](https://github.com/R-M77?tab=repositories)
 
 </div>
 
 ---
 
-##  What I Build
+## What I Build
 
 I work at the intersection of **deep learning**, **autonomous systems**, and **robotics** — building things that operate reliably in messy, real-world environments.
 
 Right now I'm focused on:
 
--  **Physical robotics** — control systems for physical worlds
--  **AI tooling** — intelligent interfaces that make complex software accessible
+- 🤖 **Surgical robotics** — imitation learning and policy architectures for autonomous soft-tissue manipulation
+- 🦾 **Exoskeleton systems** — wearable hardware for robot learning data collection and physical rehabilitation
+- 🧠 **AI tooling** — developer tools that make complex systems more accessible
 
 ---
 
-##  Featured Projects
+## Featured Projects
 
-###  [Automated Microsurgery](https://github.com/R-M77/Automated_Microsurgery)
-Supplementary materials for real-time 3D image-based visual servo control for single-cell surgery.  
-Combines computer vision, robotics control, and medical imaging at sub-millimeter precision.
+### 🔬 [RynnBrain V3 — Surgical Robot Policy](https://github.com/R-M77/rynnbrain-v3)
+Full-stack autonomous surgical manipulation system for the da Vinci Research Kit (dVRK).
+10-layer architecture backed by published research: diffusion policy, temporal memory, runtime safety monitor, sensorless force regulation, and a data pipeline powered by haptic teleoperation.
+Built in Python · PyTorch · ROS 2 · Isaac Sim
 
-###  [ZoidbergAI — Revit AI Assistant](https://github.com/R-M77/ZoidbergAI.Backend)
-AI-powered assistant for Autodesk Revit (BIM). Natural language interface to building information models.  
-Full-stack: Python backend + C# Revit addin.
+### 📈 [Diffusion Policy for Stock Trading](https://github.com/R-M77/Diff-Stock-BSc-Thesis-Project)
+BSc thesis project applying diffusion policy + PPO to stock trading agents.
+Integrates Bi-LSTM state encoder, FinBERT news sentiment, and technical indicators.
+Outperforms A2C, PPO, TD3, and ensemble baselines on Sharpe ratio and cumulative return.
+Built in Python · PyTorch · Jupyter
 
-###  [Computer Vision Projects](https://github.com/R-M77/Computer_Vision_Projects)
-Collection of hands-on CV work: segmentation, object detection, generative models, and real-time systems.
+### 💬 [ZoidbergAI — Revit AI Assistant](https://github.com/R-M77/ZoidbergAI.Backend)
+Natural language interface to Autodesk Revit BIM models.
+Full-stack: Python/FastAPI backend + C# Revit addin. Lets architects query and modify building models in plain English.
 
-###  [Tiny Machine Learning](https://github.com/R-M77/Tiny_Machine_Learning)
-ML for constrained devices — embedded systems, microcontrollers, edge inference.
+### 💰 [finterm — Financial Terminology CLI](https://github.com/R-M77/finterm)
+Terminal-native reference for finance and trading concepts.
+Definitions, formulas, and real-world context — no browser tab required.
+Built in Python · Click · pip installable
 
 ---
 
-##  Tech Stack
+## Tech Stack
 
 **Languages**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?style=flat&logo=csharp&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 
 **ML / AI**
 
@@ -70,21 +77,21 @@ ML for constrained devices — embedded systems, microcontrollers, edge inferenc
 
 ---
 
-##  Contributions
+## Contributions
 
 <div align="center">
 
-![Armin's Contribution Calendar](https://ghchart.rshah.org/R-M77)
+![Armin's Contribution Calendar](https://ghchart.rshah.org/58a6ff/R-M77)
 
 </div>
 
 ---
 
-##  Currently Exploring
+## Currently Building
 
-- **RL-based exoskeleton control** — policy training for lower-limb assistance
-- **Surgical AI** — imitation learning from surgical video
-- **LLM applications** — autonomous AI agents for research and analysis
+- 🔬 **RynnBrain V3** — autonomous surgical policy system, Phase 1 complete. Architecture: diffusion policy + bimanual temporal logic + sensorless force regulation + runtime safety monitor
+- 🦾 **HELIX** — wearable exoskeleton platform for robot learning data collection and physical rehabilitation
+- 🛠️ **AI developer tools** — local semantic search, financial CLI tools, productivity automation
 
 ---
 
