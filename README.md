@@ -28,7 +28,7 @@ Right now I'm focused on:
 
 ### 🔬 [RynnBrain V3 — Surgical Robot Policy](https://github.com/R-M77/rynnbrain-v3)
 Full-stack autonomous surgical manipulation system for the da Vinci Research Kit (dVRK).
-10-layer architecture backed by published research: diffusion policy, temporal memory, runtime safety monitor, sensorless force regulation, and a data pipeline powered by haptic teleoperation.
+10-layer architecture backed by published research: diffusion policy, temporal memory, runtime safety monitor, sensorless force regulation, and a data pipeline powered by haptic teleoperation. Phase 2 training pipeline complete — on-policy VLA distillation with AGILE Stage 3 eval harness.
 Built in Python · PyTorch · ROS 2 · Isaac Sim
 
 ### 📈 [Diffusion Policy for Stock Trading](https://github.com/R-M77/Diff-Stock-BSc-Thesis-Project)
@@ -40,6 +40,10 @@ Built in Python · PyTorch · Jupyter
 ### 💬 [ZoidbergAI — Revit AI Assistant](https://github.com/R-M77/ZoidbergAI.Backend)
 Natural language interface to Autodesk Revit BIM models.
 Full-stack: Python/FastAPI backend + C# Revit addin. Lets architects query and modify building models in plain English.
+
+### 🔭 [arxiv-scout — Personalized Paper Digest](https://github.com/R-M77/arxiv-scout)
+Fetches new arXiv papers daily, scores them by semantic similarity to a custom research profile, and outputs a ranked digest. Local ONNX embeddings — no API key, no web server, drops into any morning automation script.
+Built in Python · ChromaDB · ONNX MiniLM
 
 ### 💰 [finterm — Financial Terminology CLI](https://github.com/R-M77/finterm)
 Terminal-native reference for finance and trading concepts.
@@ -89,7 +93,7 @@ Built in Python · Click · pip installable
 
 ## Currently Building
 
-- 🔬 **RynnBrain V3** — autonomous surgical policy system, Phase 1 complete. Architecture: diffusion policy + bimanual temporal logic + sensorless force regulation + runtime safety monitor
+- 🔬 **RynnBrain V3** — autonomous surgical policy system, Phase 2 complete. Architecture: diffusion policy + bimanual temporal logic + sensorless force regulation + runtime safety monitor + VLA on-policy distillation
 - 🦾 **HELIX** — wearable exoskeleton platform for robot learning data collection and physical rehabilitation
 - 🛠️ **AI developer tools** — local semantic search, financial CLI tools, productivity automation
 
