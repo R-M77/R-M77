@@ -101,6 +101,4 @@ Built in Python · Click · pip installable
 
 <div align="center">
 
-*Building at the edge of what's possible.*
-
 </div>
