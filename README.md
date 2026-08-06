@@ -54,6 +54,14 @@ Most current engineering work is private while it is being tested and documented
 
 Embedded systems, ASIC validation, computer vision, robotics, and hardware/software integration. Now extending that foundation into ML systems, inference optimization, compilers, and edge deployment.
 
+## Daily engineering activity
+
+<div align="center">
+
+![Contribution activity](https://ghchart.rshah.org/58a6ff/R-M77)
+
+</div>
+
 ---
 
 *This profile is a map of the work—not a list of buzzwords.*
