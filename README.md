@@ -58,7 +58,7 @@ Embedded systems, ASIC validation, computer vision, robotics, and hardware/softw
 
 <div align="center">
 
-![Contribution activity](https://ghchart.rshah.org/58a6ff/R-M77)
+<img src="https://ghchart.rshah.org/2ea44f/R-M77" alt="Contribution activity" width="900">
 
 </div>
 
