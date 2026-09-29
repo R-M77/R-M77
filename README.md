@@ -68,7 +68,7 @@ Current engineering work is private while being tested and documented — public
 ## 📈 Contribution activity
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=R-M77&theme=tokyo-night&hide_border=true&area=true" />
+  <img src="https://ghchart.rshah.org/58a6ff/R-M77" alt="R-M77's GitHub contribution graph" />
 </div>
 
 ---
