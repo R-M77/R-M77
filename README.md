@@ -42,18 +42,34 @@
 
 </div>
 
-Supplementary material for real-time 3D image-based visual servo control for single-cell surgery, plus earlier end-to-end machine-learning and computer-vision builds. Current engineering work is private while being tested and documented.
+- 🔬 **Automated Microsurgery** — supplementary material for research on real-time 3D image-based visual servo control for single-cell surgery.
+- 🧠 **Projects** — end-to-end machine-learning and computer-vision builds.
+- 📓 **DataScience_ML** — data-science and ML notebooks and experiments.
 
-## ⚙️ Engineering principles
+> Browse the full archive: [26 public repositories](https://github.com/R-M77?tab=repositories)
 
-> - Trace every claim to a test, a measurement, or a primary source.
-> - Reproducibility before complexity.
-> - Small working vertical slices over unfinished frameworks.
-> - Safety, data boundaries, and failure modes stay explicit.
+Current engineering work is private while being tested and documented — public writeups land here as tracks mature.
 
-## 🧬 Background
+## ⚙️ How I work
 
-Embedded systems · ASIC validation · computer vision · robotics · hardware/software integration — now extended into ML systems, inference optimization, compilers, and edge deployment.
+- 🔬 **Measure first** — latency, memory, and precision numbers before any optimization claim.
+- 🧪 **Gate it in CI** — evals and regression checks that fail the build when the numbers move.
+- 🧩 **Ship vertical slices** — the smallest end-to-end system that runs on real hardware, then harden it.
+- 🛡️ **Bound the system** — safety, data boundaries, and failure modes explicit, especially around robots and hardware.
+- 📝 **Trace every claim** — to a test, a measurement, or a primary source. No vibes.
+
+## 🧬 Track record
+
+- ⚙️ Validated ASICs and brought up embedded systems.
+- 👁️ Built computer-vision and robotics systems, from perception to teleoperation.
+- 🔗 Integrated hardware/software stacks end to end.
+- 🚀 Now extending that foundation into ML systems, inference optimization, compilers, and edge deployment.
+
+## 📈 Contribution activity
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=R-M77&theme=tokyo-night&hide_border=true&area=true" />
+</div>
 
 ---
 
