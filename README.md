@@ -4,36 +4,17 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=21&pause=1200&color=58A6FF&center=true&vCenter=true&width=640&lines=AI%2FML+Systems+Engineer;Inference+%C2%B7+Compilers+%C2%B7+Robotics+%C2%B7+Edge+AI;Research+%E2%86%92+measurable+engineering)](https://git.io/typing-svg)
 
-**Building practical systems at the boundary of models, compilers, hardware, and robots.**
+**AI/ML Systems Engineer · 144 contributions in the last year**
+
+My `Automated_Microsurgery` repo shares supplementary material for research on real-time, 3D image-guided control in single-cell surgery.
 
 ![Profile views](https://komarev.com/ghpvc/?username=R-M77&color=58a6ff&style=flat)
 
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
-<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-<img src="https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white" />
-<img src="https://img.shields.io/badge/ROS_2-22314E?style=for-the-badge&logo=ros&logoColor=white" />
-<img src="https://img.shields.io/badge/MLIR-000000?style=for-the-badge&logo=llvm&logoColor=white" />
+<img src="https://skillicons.dev/icons?i=py,cpp,pytorch,cuda,ros,linux,docker,git&theme=dark&perline=8" alt="Tech stack" />
 
 </div>
 
-## 🎯 Current focus
-
-| | Track | Work |
-|---|---|---|
-| 🔬 | **Inference systems** | Precision selection, latency/memory measurement, regression gates, deployment budgets |
-| 🧩 | **Compilers & IR** | MLIR-style lowering, typed intermediate representations, pass pipelines, target cost models |
-| 🤖 | **Robotics & vision** | Teleoperation, dataset reproducibility, perception, safe system boundaries |
-| ⚡ | **Edge AI** | Quantization, runtime evaluation, hardware-aware optimization |
-
-## 📊 Activity
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=R-M77&show_icons=true&theme=tokyonight&hide_border=true" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=R-M77&layout=compact&theme=tokyonight&hide_border=true" height="165" />
-</div>
-
-## 🧪 Selected work
+## 🔬 Work you can explore
 
 <div align="center">
 
@@ -42,30 +23,36 @@
 
 </div>
 
-- 🔬 **Automated Microsurgery** — supplementary material for research on real-time 3D image-based visual servo control for single-cell surgery.
-- 🧠 **Projects** — end-to-end machine-learning and computer-vision builds.
-- 📓 **DataScience_ML** — data-science and ML notebooks and experiments.
+- **Automated Microsurgery** — supplementary material for the single-cell surgery research above.
+- **Projects** — complete machine-learning and computer-vision builds.
+- **DataScience_ML** — notebooks and experiments.
 
-> Browse the full archive: [26 public repositories](https://github.com/R-M77?tab=repositories)
+Browse all [26 public repositories](https://github.com/R-M77?tab=repositories).
 
-Current engineering work is private while being tested and documented — public writeups land here as tracks mature.
+_Most current work is private while being tested — it lands here as it matures._
+
+## 🎯 What I'm working on
+
+- **Inference systems:** measuring speed, memory use, and precision before tuning deployment.
+- **Compilers and IR:** shaping how models are represented and translated for hardware.
+- **Robotics and vision:** perception and control with clear safety and data boundaries.
+- **Edge AI:** getting models to run well on smaller devices.
+
+My background spans embedded systems, ASIC validation, computer vision, robotics, and hardware/software integration. I'm extending that work into ML systems, inference optimization, compilers, and edge deployment.
 
 ## ⚙️ How I work
 
-- 🔬 **Measure first** — latency, memory, and precision numbers before any optimization claim.
-- 🧪 **Gate it in CI** — evals and regression checks that fail the build when the numbers move.
-- 🧩 **Ship vertical slices** — the smallest end-to-end system that runs on real hardware, then harden it.
-- 🛡️ **Bound the system** — safety, data boundaries, and failure modes explicit, especially around robots and hardware.
-- 📝 **Trace every claim** — to a test, a measurement, or a primary source. No vibes.
+- **Measure first.** Put latency, memory, and precision numbers behind every performance claim.
+- **Catch regressions.** Use CI checks when results can drift.
+- **Start on real hardware.** Build the smallest complete system, then make it sturdier.
+- **Show the evidence.** Trace claims to a test, measurement, or source; spell out safety and data boundaries, especially around robots.
 
-## 🧬 Track record
+## 📊 GitHub activity
 
-- ⚙️ Validated ASICs and brought up embedded systems.
-- 👁️ Built computer-vision and robotics systems, from perception to teleoperation.
-- 🔗 Integrated hardware/software stacks end to end.
-- 🚀 Now extending that foundation into ML systems, inference optimization, compilers, and edge deployment.
-
-## 📈 Contribution activity
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=R-M77&show_icons=true&theme=tokyonight&hide_border=true" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=R-M77&layout=compact&theme=tokyonight&hide_border=true" height="165" />
+</div>
 
 <div align="center">
   <img src="https://ghchart.rshah.org/58a6ff/R-M77" alt="R-M77's GitHub contribution graph" />
