@@ -62,7 +62,7 @@ During my **M.A.Sc. at the University of Toronto**, I worked on automating singl
 
 I developed image-processing methods to locate features in microscope images and a vision-based controller to guide the tools toward the target. The work brought together **3D image segmentation, motion tracking, and closed-loop control**. The repository contains the supplementary videos and images from these experiments.
 
-**[Watch the experiments →](https://github.com/R-M77/Automated_Microsurgery)** · [Read the 2021 paper](https://www.inderscience.com/info/inarticle.php?artid=118413) · [Thesis & publications](https://github.com/R-M77/Resume/blob/main/Publications.md)
+**[Watch the experiments →](https://github.com/R-M77/Automated_Microsurgery)** · [Read the paper](https://www.inderscience.com/info/inarticle.php?artid=118413) · [Thesis & publications](https://github.com/R-M77/Resume/blob/main/Publications.md)
 
 ## 🛠 Projects & experiments
 
