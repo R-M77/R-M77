@@ -1,69 +1,35 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:141e30,100:243b55&height=180&section=header&text=Armin%20Eshaghi&fontSize=42&fontColor=ffffff&animation=fadeIn" />
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/hello-still.png">
+  <img src="assets/hello.gif" alt="Armin Eshaghi — AI/ML Systems Engineer. From models to machines." width="100%">
+</picture>
 
-<div align="center">
+I work across **inference, compilers, robotics, and edge AI**, with a background in embedded systems, ASIC validation, and computer vision.
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=21&pause=1200&color=58A6FF&center=true&vCenter=true&width=640&lines=AI%2FML+Systems+Engineer;Inference+%C2%B7+Compilers+%C2%B7+Robotics+%C2%B7+Edge+AI;Research+%E2%86%92+measurable+engineering)](https://git.io/typing-svg)
+[Code](#code--experiments) &nbsp; / &nbsp; [Research](#at-the-scale-of-a-single-cell) &nbsp; / &nbsp; [LinkedIn](https://www.linkedin.com/in/armineshaghi) &nbsp; / &nbsp; [All repos](https://github.com/R-M77?tab=repositories)
 
-**AI/ML Systems Engineer · 144 contributions in the last year**
+## Code & experiments
 
-My `Automated_Microsurgery` repo shares supplementary material for research on real-time, 3D image-guided control in single-cell surgery.
+**[Blender MCP integration →](https://github.com/R-M77/test_ground)** · Experimental prototype  
+A Python MCP server, Blender add-on, and standalone agent for objects, scenes, materials, and rendering.
 
-![Profile views](https://komarev.com/ghpvc/?username=R-M77&color=58a6ff&style=flat)
+**[feedPod →](https://github.com/R-M77/feedPod)** · Automation skill  
+A workflow specification for turning RSS/Substack articles into NotebookLM notebooks and audio overviews.
 
-<img src="https://skillicons.dev/icons?i=py,cpp,pytorch,cuda,ros,linux,docker,git&theme=dark&perline=8" alt="Tech stack" />
+## At the scale of a single cell
 
-</div>
+During my M.A.Sc. at the University of Toronto, I worked on **real-time 3D image-based visual servo control for single-cell surgery**. The work connects computer vision, visual feedback, and robot control.
 
-## 🔬 Work you can explore
+<a href="https://github.com/R-M77/Automated_Microsurgery">
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/microsurgery-still.png">
+    <img src="assets/microsurgery.gif" alt="Actual microscope footage from my single-cell surgery research, showing the cell and micromanipulators" width="100%">
+  </picture>
+</a>
 
-<div align="center">
+<sub>Real microscope footage · Supplementary Video 1, Automated_Microsurgery</sub>
 
-[![Automated Microsurgery](https://github-readme-stats.vercel.app/api/pin/?username=R-M77&repo=Automated_Microsurgery&theme=tokyonight&hide_border=true)](https://github.com/R-M77/Automated_Microsurgery)
-[![Projects](https://github-readme-stats.vercel.app/api/pin/?username=R-M77&repo=Projects&theme=tokyonight&hide_border=true)](https://github.com/R-M77/Projects)
-
-</div>
-
-- **Automated Microsurgery** — supplementary material for the single-cell surgery research above.
-- **Projects** — complete machine-learning and computer-vision builds.
-- **DataScience_ML** — notebooks and experiments.
-
-Browse all [26 public repositories](https://github.com/R-M77?tab=repositories).
-
-_Most current work is private while being tested — it lands here as it matures._
-
-## 🎯 What I'm working on
-
-- **Inference systems:** measuring speed, memory use, and precision before tuning deployment.
-- **Compilers and IR:** shaping how models are represented and translated for hardware.
-- **Robotics and vision:** perception and control with clear safety and data boundaries.
-- **Edge AI:** getting models to run well on smaller devices.
-
-My background spans embedded systems, ASIC validation, computer vision, robotics, and hardware/software integration. I'm extending that work into ML systems, inference optimization, compilers, and edge deployment.
-
-## ⚙️ How I work
-
-- **Measure first.** Put latency, memory, and precision numbers behind every performance claim.
-- **Catch regressions.** Use CI checks when results can drift.
-- **Start on real hardware.** Build the smallest complete system, then make it sturdier.
-- **Show the evidence.** Trace claims to a test, measurement, or source; spell out safety and data boundaries, especially around robots.
-
-## 📊 GitHub activity
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=R-M77&show_icons=true&theme=tokyonight&hide_border=true" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=R-M77&layout=compact&theme=tokyonight&hide_border=true" height="165" />
-</div>
-
-<div align="center">
-  <img src="https://ghchart.rshah.org/58a6ff/R-M77" alt="R-M77's GitHub contribution graph" />
-</div>
+[Watch the original experiments →](https://github.com/R-M77/Automated_Microsurgery) &nbsp; / &nbsp; [Read the paper →](https://www.inderscience.com/info/inarticle.php?artid=118413) &nbsp; / &nbsp; [Thesis & publications →](https://github.com/R-M77/Resume/blob/main/Publications.md)
 
 ---
 
-<div align="center">
-
-*This profile is a map of the work — not a list of buzzwords.*
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:243b55,100:141e30&height=120&section=footer" />
-
-</div>
+Python · C/C++ · PyTorch · CUDA · OpenCV · Linux
