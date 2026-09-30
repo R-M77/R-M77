@@ -6,3 +6,9 @@
 - `microsurgery-still.png`: Still frame from the same experiment.
 
 Research: [Automation of single cell surgery in real-time using a vision-based control system](https://www.inderscience.com/info/inarticle.php?artid=118413), Armin Eshaghi and James K. Mills, 2021.
+
+## Contact and technology graphics
+
+The `link-*.svg` files are small local contact/navigation labels made for this profile. They do not rely on an external badge service.
+
+The `tech-*.svg` icons are from [Devicon](https://github.com/devicons/devicon), used under its MIT license. See `DEVICON-LICENSE.txt`. Source paths are `icons/<name>/<name>-original.svg`, except Python, which uses `icons/python/python-plain.svg`. Brand names and logos belong to their respective owners.
