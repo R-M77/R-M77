@@ -66,39 +66,33 @@ I developed image-processing methods to locate features in microscope images and
 
 ## 🛠 Projects & experiments
 
-### [OpenClaw cron extension](https://github.com/R-M77/openclaw/tree/feat/main-session-agent-turn)
+### [Context-aware scheduled jobs](https://github.com/R-M77/openclaw/tree/feat/main-session-agent-turn)
 
-**Proposed contribution · TypeScript · Tests**
+**Scheduler extension · TypeScript · Tests**
 
-<sub>Fork of <a href="https://github.com/openclaw/openclaw">openclaw/openclaw</a> · Upstream PR closed without merge</sub>
+I implemented an OpenClaw cron extension for **context-aware scheduled jobs**. The patch lets message-based agentTurn payloads **reuse the main session’s context** through the existing system-event path.
 
-A focused extension to OpenClaw’s scheduler for jobs that need the **main session’s context**. The patch allows message-based agentTurn payloads to use the existing system-event path, instead of requiring a separate payload format.
+I added CLI and service validation, updated scheduling tests, and tool documentation for the new dispatch path.
 
-The branch includes **CLI and service-validation changes**, updated scheduling tests, and tool documentation.
-
-[Read the patch →](https://github.com/R-M77/openclaw/tree/feat/main-session-agent-turn) · [PR #31827 · closed, unmerged](https://github.com/openclaw/openclaw/pull/31827)
+[View patch →](https://github.com/R-M77/openclaw/tree/feat/main-session-agent-turn) · [Proposal](https://github.com/openclaw/openclaw/pull/31827)
 
 ### [RFID reader integration](https://github.com/R-M77/AMBIENT_video_capture/tree/dev)
 
 **Hardware prototype · C++ · FEIG RFID SDK**
 
-<sub>Fork of <a href="https://github.com/sam-osia/AMBIENT_video_capture">sam-osia/AMBIENT_video_capture</a> · My work: reader integration prototype</sub>
+I built a C++ reader-integration prototype that discovers a USB RFID reader, inventories tags, and collects unique identifiers. **Timestamped CSV output** turns reader scans into **structured records for downstream analysis**.
 
-A hardware-integration experiment on the dev branch of an RFID-triggered capture project. The C++ prototype discovers a USB reader, inventories tags, collects unique identifiers, and writes **timestamped results to CSV** using the FEIG reader SDK.
-
-My branch adds the **reader experiment and scanner-test changes**. It combines SDK sample patterns with integration code; the camera and peripheral-management system comes from the upstream project.
+My changes connect the FEIG RFID SDK to the reader experiment and scanner tests.
 
 [Explore the dev branch →](https://github.com/R-M77/AMBIENT_video_capture/tree/dev) · [Reader prototype](https://github.com/R-M77/AMBIENT_video_capture/blob/dev/G_test.cpp)
 
 ### [On-device flower classification](https://github.com/R-M77/TFL_Classify)
 
-**Codelab adaptation · Kotlin · TensorFlow Lite**
+**Android model integration · Kotlin · TensorFlow Lite**
 
-<sub>Fork of <a href="https://github.com/hoitab/TFLClassify">hoitab/TFLClassify</a> · My work: Android model integration</sub>
+I integrated a TensorFlow Lite model into an Android camera-classification app, converting **camera frames into model inputs** and **displaying the top prediction**.
 
-An Android camera-classification exercise built from the TensorFlow Lite flower-classification codelab. I connected the supplied app scaffold to a **TensorFlow Lite model**, converted camera frames into model inputs, and displayed the top prediction.
-
-My changes add model binding and GPU-delegate selection with a **four-thread CPU fallback**, alongside Android build updates.
+I added **GPU-delegate selection with a four-thread CPU fallback**, alongside model binding and Android build updates.
 
 [Explore my changes →](https://github.com/R-M77/TFL_Classify/compare/f52727f3bfb0854bab352fef27b0f772e9cd2929...d79431169dcbb1ecc35166cc47b77f3f72aa6dee) · [Repository](https://github.com/R-M77/TFL_Classify)
 
