@@ -8,6 +8,7 @@
   <a href="https://github.com/R-M77"><img src="assets/link-github.svg" alt="Follow on GitHub" height="30" width="105"></a>
   <a href="https://github.com/R-M77/Resume/blob/main/Resume_Armin_Eshaghi.pdf"><img src="assets/link-resume.svg" alt="Read my résumé" height="30" width="111"></a>
   <a href="https://github.com/R-M77/Resume/blob/main/Publications.md"><img src="assets/link-publications.svg" alt="Read my publications" height="30" width="147"></a>
+  <a href="https://raw.githubusercontent.com/R-M77/R-M77/main/assets/hello.gif"><sub>View header animation ↗</sub></a>
 </p>
 
 Hi, I'm Armin. My background is in **embedded systems, computer vision, and robotics**, from ASIC validation and hardware/software integration to guiding robots with visual feedback.
@@ -58,13 +59,25 @@ During my **M.A.Sc. at the University of Toronto**, I worked on automating singl
   </picture>
 </a>
 
-<sub>Actual experiment · Excerpt from Supplementary Video 1 · Computer vision + robot control</sub>
+<sub>Actual experiment · Excerpt from Supplementary Video 1 · Computer vision + robot control · <a href="https://raw.githubusercontent.com/R-M77/R-M77/main/assets/microsurgery.gif">Play animated excerpt ↗</a></sub>
 
 I developed image-processing methods to locate features in microscope images and a vision-based controller to guide the tools toward the target. The work brought together **3D image segmentation, motion tracking, and closed-loop control**. The repository contains the supplementary videos and images from these experiments.
 
 **[Watch the experiments →](https://github.com/R-M77/Automated_Microsurgery)** · [Read the paper](https://www.inderscience.com/info/inarticle.php?artid=118413) · [Thesis & publications](https://github.com/R-M77/Resume/blob/main/Publications.md)
 
 ## 🛠 Projects & experiments
+
+### [MLIR Cost Model Lab](https://github.com/R-M77/mlir-cost-model-lab)
+
+**Compiler modeling · Python · Regression tests**
+
+I built a small, MLIR-inspired tool for inspecting the costs of tensor graphs. It checks **shapes and value references**, counts scalar work and logical tensor traffic, and calculates **idealized roofline estimates** from supplied compute and bandwidth limits.
+
+The optimization planner tracks which values are still needed and models eligible elementwise fusions. I also added **scalar and tiled/vector matmul representations**, with before-and-after cost reports, plus deterministic regression fixtures and budget gates to catch changes in the estimates.
+
+It's an educational model implemented in Python. It doesn't parse MLIR, generate kernels, or measure hardware performance.
+
+[Explore the lab →](https://github.com/R-M77/mlir-cost-model-lab) · [Examples & model assumptions](https://github.com/R-M77/mlir-cost-model-lab/blob/main/docs/reference.md)
 
 ### [Context-aware scheduled jobs](https://github.com/R-M77/openclaw/tree/feat/main-session-agent-turn)
 
@@ -85,16 +98,6 @@ I built a C++ reader-integration prototype that discovers a USB RFID reader, inv
 My changes connect the FEIG RFID SDK to the reader experiment and scanner tests.
 
 [Explore the dev branch →](https://github.com/R-M77/AMBIENT_video_capture/tree/dev) · [Reader prototype](https://github.com/R-M77/AMBIENT_video_capture/blob/dev/G_test.cpp)
-
-### [On-device flower classification](https://github.com/R-M77/TFL_Classify)
-
-**Android model integration · Kotlin · TensorFlow Lite**
-
-I integrated a TensorFlow Lite model into an Android camera-classification app, converting **camera frames into model inputs** and **displaying the top prediction**.
-
-I added **GPU-delegate selection with a four-thread CPU fallback**, alongside model binding and Android build updates.
-
-[Explore my changes →](https://github.com/R-M77/TFL_Classify/compare/f52727f3bfb0854bab352fef27b0f772e9cd2929...d79431169dcbb1ecc35166cc47b77f3f72aa6dee) · [Repository](https://github.com/R-M77/TFL_Classify)
 
 ## What I'm working toward
 
