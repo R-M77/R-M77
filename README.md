@@ -1,14 +1,11 @@
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/hello-still.png">
-  <img src="assets/hello.gif" alt="Armin Eshaghi — AI/ML Systems Engineer. From models to machines." width="100%">
-</picture>
+<img src="assets/hello.gif" alt="Armin Eshaghi — AI/ML Systems Engineer. From models to machines." width="100%">
 
 <p>
   <a href="https://www.linkedin.com/in/armineshaghi"><img src="assets/link-linkedin.svg" alt="Connect on LinkedIn" height="30" width="112"></a>
   <a href="https://github.com/R-M77"><img src="assets/link-github.svg" alt="Follow on GitHub" height="30" width="105"></a>
   <a href="https://github.com/R-M77/Resume/blob/main/Resume_Armin_Eshaghi.pdf"><img src="assets/link-resume.svg" alt="Read my resume" height="30" width="111"></a>
   <a href="https://github.com/R-M77/Resume/blob/main/Publications.md"><img src="assets/link-publications.svg" alt="Read my publications" height="30" width="147"></a>
-  <a href="https://raw.githubusercontent.com/R-M77/R-M77/main/assets/hello.gif"><sub>View header animation ↗</sub></a>
+  <a href="https://raw.githubusercontent.com/R-M77/R-M77/main/assets/hello.gif"><sub>View header animation ↗</sub></a> · <a href="https://github.com/R-M77/R-M77/blob/main/assets/hello-still.png"><sub>Still image</sub></a>
 </p>
 
 Hi, I'm Armin. My background is in **embedded systems, computer vision, and robotics**, from ASIC validation and hardware/software integration to guiding robots with visual feedback.
@@ -53,13 +50,10 @@ I'm building on that experience through **ML systems, inference, compilers, and 
 During my **M.A.Sc. at the University of Toronto**, I worked on automating single-cell surgery with real-time 3D visual feedback. The footage below is from that research: microscope images are used to track a cell and guide the micromanipulators.
 
 <a href="https://github.com/R-M77/Automated_Microsurgery">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="assets/microsurgery-still.png">
-    <img src="assets/microsurgery.gif" alt="Real microscope footage from my single-cell surgery research, showing the cell, micromanipulators, and visual-tracking overlays" width="100%">
-  </picture>
+  <img src="assets/microsurgery.gif" alt="Real microscope footage from my single-cell surgery research, showing the cell, micromanipulators, and visual-tracking overlays" width="100%">
 </a>
 
-<sub>Actual experiment · Excerpt from Supplementary Video 1 · Computer vision + robot control · <a href="https://raw.githubusercontent.com/R-M77/R-M77/main/assets/microsurgery.gif">Play animated excerpt ↗</a></sub>
+<sub>Actual experiment · Excerpt from Supplementary Video 1 · Computer vision + robot control · <a href="https://raw.githubusercontent.com/R-M77/R-M77/main/assets/microsurgery.gif">Play animated excerpt ↗</a> · <a href="https://github.com/R-M77/R-M77/blob/main/assets/microsurgery-still.png">Still frame</a></sub>
 
 I developed image-processing methods to locate features in microscope images and a vision-based controller to guide the tools toward the target. The work brought together **3D image segmentation, motion tracking, and closed-loop control**. The repository contains the supplementary videos and images from these experiments.
 
