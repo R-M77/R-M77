@@ -8,109 +8,48 @@
   <a href="https://raw.githubusercontent.com/R-M77/R-M77/main/assets/hello.gif"><sub>View header animation ↗</sub></a> · <a href="https://github.com/R-M77/R-M77/blob/main/assets/hello-still.png"><sub>Still image</sub></a>
 </p>
 
-Hi, I'm Armin. My background is in **embedded systems, computer vision, and robotics**, from ASIC validation and hardware/software integration to guiding robots with visual feedback.
+I'm **Armin Eshaghi**. I build computer vision software for automotive edge processors. I've written reusable C libraries for image correction and tested MobileNet on custom silicon to check the accuracy and performance of on-chip inference.
 
-I'm building on that experience through **ML systems, inference, compilers, and edge AI**. This profile brings together my research, small tools, and experiments as I work across those areas.
-
-## Tools & technical background
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <img src="assets/tech-python.svg" alt="Python" width="22" height="22">&nbsp;
-      <img src="assets/tech-cplusplus.svg" alt="C++" width="22" height="22">&nbsp;
-      <strong>Languages</strong><br>
-      Python · C · C++ · CUDA
-    </td>
-    <td width="50%" valign="top">
-      <img src="assets/tech-pytorch.svg" alt="PyTorch" width="22" height="22">&nbsp;
-      <img src="assets/tech-tensorflow.svg" alt="TensorFlow" width="22" height="22">&nbsp;
-      <img src="assets/tech-opencv.svg" alt="OpenCV" width="22" height="22"><br>
-      <strong>ML &amp; computer vision</strong><br>
-      PyTorch · TensorFlow / Keras<br>OpenCV · scikit-learn
-    </td>
-  </tr>
-  <tr>
-    <td valign="top">
-      <img src="assets/tech-linux.svg" alt="Linux" width="22" height="22">&nbsp;
-      <img src="assets/tech-docker.svg" alt="Docker" width="22" height="22">&nbsp;
-      <strong>Systems &amp; tooling</strong><br>
-      Linux · Docker · Git
-    </td>
-    <td valign="top">
-      <img src="assets/tech-arduino.svg" alt="Arduino" width="22" height="22">&nbsp;
-      <strong>Hardware &amp; control</strong><br>
-      Embedded systems · MATLAB · Arduino
-    </td>
-  </tr>
-</table>
+[Watch a robot track a cell](#-vision-guided-microsurgery) · [Cast YouTube to an old TV](#-jetsoncast) · [Inspect a tensor fusion](#mlir-cost-model-lab)
 
 ## 🔬 Vision-guided microsurgery
 
-During my **M.A.Sc. at the University of Toronto**, I worked on automating single-cell surgery with real-time 3D visual feedback. The footage below is from that research: microscope images are used to track a cell and guide the micromanipulators.
+A cell moves under the microscope. How does the robot keep its tool on target? During my **M.A.Sc. at the University of Toronto**, I developed image-processing methods to locate features in 3D and a controller that used visual feedback to guide the micromanipulators. In the clip, watch the tracking overlays as the tools approach the cell.
 
 <a href="https://github.com/R-M77/Automated_Microsurgery">
   <img src="assets/microsurgery.gif" alt="Real microscope footage from my single-cell surgery research, showing the cell, micromanipulators, and visual-tracking overlays" width="100%">
 </a>
 
-<sub>Actual experiment · Excerpt from Supplementary Video 1 · Computer vision + robot control · <a href="https://raw.githubusercontent.com/R-M77/R-M77/main/assets/microsurgery.gif">Play animated excerpt ↗</a> · <a href="https://github.com/R-M77/R-M77/blob/main/assets/microsurgery-still.png">Still frame</a></sub>
-
-I developed image-processing methods to locate features in microscope images and a vision-based controller to guide the tools toward the target. The work brought together **3D image segmentation, motion tracking, and closed-loop control**. The repository contains the supplementary videos and images from these experiments.
-
-**[Watch the experiments →](https://github.com/R-M77/Automated_Microsurgery)** · [Read the paper](https://www.inderscience.com/info/inarticle.php?artid=118413) · [Thesis & publications](https://github.com/R-M77/Resume/blob/main/Publications.md)
+[Supplementary Video 1 (MP4)](https://raw.githubusercontent.com/R-M77/Automated_Microsurgery/main/Supplementary%20Video%201.mp4) · [First-author paper](https://www.inderscience.com/info/inarticle.php?artid=118413) · [All four experiments](https://github.com/R-M77/Automated_Microsurgery) · [Still frame](assets/microsurgery-still.png)
 
 ## 📺 JetsonCast
 
-I built JetsonCast to give an older TV a YouTube Cast button using a spare Linux computer. Pick a video in the YouTube app on your phone and the computer plays it on the TV over HDMI. VacuumTube handles playback and YouTube ad blocking.
+My old TV had an HDMI input and no YouTube app. I plugged in a **Jetson Orin Nano** so I could pick a video on my phone and play it on the TV. VacuumTube provides YouTube playback, casting discovery and ad blocking. I built the Linux setup, TV audio routing and idle screensavers around it. Jet, the little lynx in the demo, turns up if you enable fun mode.
 
 <a href="https://github.com/R-M77/JetsonCast"><img src="https://raw.githubusercontent.com/R-M77/JetsonCast/main/assets/previews/banner.gif" width="560" alt="JetsonCast connects a Linux PC to an older TV for YouTube casting, with an optional lynx on the idle screensaver"></a>
 
-I developed the setup on a **Jetson Orin Nano 8 GB** and added guided installation, TV audio routing and animated screensavers. Turn on fun mode and Jet the lynx occasionally wanders across the idle screen.
+[Get JetsonCast](https://github.com/R-M77/JetsonCast) · [Watch the animated demo](https://raw.githubusercontent.com/R-M77/JetsonCast/main/assets/previews/demo.gif) · [Landscape MP4](https://raw.githubusercontent.com/R-M77/JetsonCast/main/assets/previews/demo-landscape.mp4) · [Vertical clip (MP4)](https://raw.githubusercontent.com/R-M77/JetsonCast/main/assets/previews/demo-vertical.mp4) · [Device guides](https://github.com/R-M77/JetsonCast/tree/main/devices)
 
-**[Explore JetsonCast →](https://github.com/R-M77/JetsonCast)** · [Watch the 27-second demo](https://github.com/R-M77/JetsonCast/blob/main/assets/previews/demo-landscape.mp4) · [Device guides](https://github.com/R-M77/JetsonCast/tree/main/devices)
+## MLIR Cost Model Lab
 
-## 🛠 Projects & experiments
+How much memory traffic does fusing two operations save? I built a Python tool to trace tensor shapes, count reads and writes, and compare fusion plans. In one example, a matrix multiply feeds a bias addition and then ReLU.
 
-### [MLIR Cost Model Lab](https://github.com/R-M77/mlir-cost-model-lab)
+| Model result | Separate operations | Fuse bias and ReLU |
+| --- | ---: | ---: |
+| Logical bytes read and written | 248 | 184 |
+| Scalar operations | 64 | 64 |
 
-**Compiler modeling · Python · Regression tests**
+Fusion skips one intermediate write and read. These are static estimates from the graph. The Python example produces both reports, so you can change the shapes and compare them yourself.
 
-I built a small, MLIR-inspired tool for inspecting the costs of tensor graphs. It checks **shapes and value references**, counts scalar work and logical tensor traffic, and calculates **idealized roofline estimates** from supplied compute and bandwidth limits.
+[Run the example](https://github.com/R-M77/mlir-cost-model-lab#run-a-reproducible-example) · [Inspect the input graph](https://github.com/R-M77/mlir-cost-model-lab/blob/main/examples/matmul_bias_relu.json) · [Model assumptions](https://github.com/R-M77/mlir-cost-model-lab/blob/main/docs/reference.md)
 
-The optimization planner tracks which values are still needed and models eligible elementwise fusions. I also added **scalar and tiled/vector matmul representations**, with before-and-after cost reports, plus deterministic regression fixtures and budget gates to catch changes in the estimates.
+## Other engineering work
 
-It's an educational model implemented in Python. It doesn't parse MLIR, generate kernels, or measure hardware performance.
+- **Context-aware scheduling in TypeScript.** I prototyped a way for an OpenClaw scheduled job to reuse the main session’s conversation context, with validation at the CLI and service boundaries. [Implementation](https://github.com/R-M77/openclaw/tree/feat/main-session-agent-turn) · [Upstream proposal](https://github.com/openclaw/openclaw/pull/31827)
+- **RFID reader integration in C++.** I used the FEIG SDK to discover USB readers, inventory tags and write timestamped identifiers to CSV for downstream analysis. [Reader prototype](https://github.com/R-M77/AMBIENT_video_capture/blob/dev/G_test.cpp)
 
-[Explore the lab →](https://github.com/R-M77/mlir-cost-model-lab) · [Examples & model assumptions](https://github.com/R-M77/mlir-cost-model-lab/blob/main/docs/reference.md)
+**Tools I work with** · C and C++ for embedded software, Python and OpenCV for vision, PyTorch and TensorFlow for ML, and Linux for integration.
 
-### [Context-aware scheduled jobs](https://github.com/R-M77/openclaw/tree/feat/main-session-agent-turn)
+I’m especially interested in embedded vision and ML systems roles where I can work on inference, memory use and latency on real hardware.
 
-**Scheduler extension · TypeScript · Tests**
-
-I implemented an OpenClaw cron extension for **context-aware scheduled jobs**. The patch lets message-based agentTurn payloads **reuse the main session’s context** through the existing system-event path.
-
-I added CLI and service validation, updated scheduling tests, and tool documentation for the new dispatch path.
-
-[View patch →](https://github.com/R-M77/openclaw/tree/feat/main-session-agent-turn) · [Proposal](https://github.com/openclaw/openclaw/pull/31827)
-
-### [RFID reader integration](https://github.com/R-M77/AMBIENT_video_capture/tree/dev)
-
-**Hardware prototype · C++ · FEIG RFID SDK**
-
-I built a C++ reader-integration prototype that discovers a USB RFID reader, inventories tags, and collects unique identifiers. **Timestamped CSV output** turns reader scans into **structured records for downstream analysis**.
-
-My changes connect the FEIG RFID SDK to the reader experiment and scanner tests.
-
-[Explore the dev branch →](https://github.com/R-M77/AMBIENT_video_capture/tree/dev) · [Reader prototype](https://github.com/R-M77/AMBIENT_video_capture/blob/dev/G_test.cpp)
-
-## What I'm working toward
-
-| Inference & deployment | Compilers & hardware |
-| :--- | :--- |
-| How precision, latency, and memory use affect model execution and deployment | How models are represented, translated, and run on different hardware targets |
-| **Robotics & vision** | **Edge AI** |
-| Perception, visual feedback, and control in physical systems | Useful models on smaller devices, with quantization and runtime evaluation |
-
----
-
-**Find me:** [LinkedIn](https://www.linkedin.com/in/armineshaghi) · [GitHub](https://github.com/R-M77) · [All repositories](https://github.com/R-M77?tab=repositories)
+[Résumé](https://github.com/R-M77/Resume/blob/main/Resume_Armin_Eshaghi.pdf) · [LinkedIn](https://www.linkedin.com/in/armineshaghi) · [Publications](https://github.com/R-M77/Resume/blob/main/Publications.md)
