@@ -59,6 +59,16 @@ I developed image-processing methods to locate features in microscope images and
 
 **[Watch the experiments →](https://github.com/R-M77/Automated_Microsurgery)** · [Read the paper](https://www.inderscience.com/info/inarticle.php?artid=118413) · [Thesis & publications](https://github.com/R-M77/Resume/blob/main/Publications.md)
 
+## 📺 JetsonCast
+
+I built JetsonCast to give an older TV a YouTube Cast button using a spare Linux computer. Pick a video in the YouTube app on your phone and the computer plays it on the TV over HDMI. VacuumTube handles playback and YouTube ad blocking.
+
+<a href="https://github.com/R-M77/JetsonCast"><img src="https://raw.githubusercontent.com/R-M77/JetsonCast/main/assets/previews/banner.gif" width="560" alt="JetsonCast connects a Linux PC to an older TV for YouTube casting, with an optional lynx on the idle screensaver"></a>
+
+I developed the setup on a **Jetson Orin Nano 8 GB** and added guided installation, TV audio routing and animated screensavers. Turn on fun mode and Jet the lynx occasionally wanders across the idle screen.
+
+**[Explore JetsonCast →](https://github.com/R-M77/JetsonCast)** · [Watch the 27-second demo](https://github.com/R-M77/JetsonCast/blob/main/assets/previews/demo-landscape.mp4) · [Device guides](https://github.com/R-M77/JetsonCast/tree/main/devices)
+
 ## 🛠 Projects & experiments
 
 ### [MLIR Cost Model Lab](https://github.com/R-M77/mlir-cost-model-lab)
