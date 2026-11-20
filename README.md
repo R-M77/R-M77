@@ -1,55 +1,35 @@
-<img src="assets/hello.gif" alt="Armin Eshaghi — AI/ML Systems Engineer. From models to machines." width="100%">
+# Embedded vision and ML systems
 
-<p>
-  <a href="https://www.linkedin.com/in/armineshaghi"><img src="assets/link-linkedin.svg" alt="Connect on LinkedIn" height="30" width="112"></a>
-  <a href="https://github.com/R-M77"><img src="assets/link-github.svg" alt="Follow on GitHub" height="30" width="105"></a>
-  <a href="https://github.com/R-M77/Resume/blob/main/Resume_Armin_Eshaghi.pdf"><img src="assets/link-resume.svg" alt="Read my resume" height="30" width="111"></a>
-  <a href="https://github.com/R-M77/Resume/blob/main/Publications.md"><img src="assets/link-publications.svg" alt="Read my publications" height="30" width="147"></a>
-  <a href="https://raw.githubusercontent.com/R-M77/R-M77/main/assets/hello.gif"><sub>View header animation ↗</sub></a> · <a href="https://github.com/R-M77/R-M77/blob/main/assets/hello-still.png"><sub>Still image</sub></a>
-</p>
+I build computer vision software for automotive edge processors. I’ve written C libraries for image correction and tested MobileNet on custom silicon to measure inference accuracy and performance.
 
-I'm **Armin Eshaghi**. I build computer vision software for automotive edge processors. I've written reusable C libraries for image correction and tested MobileNet on custom silicon to check the accuracy and performance of on-chip inference.
+[Read my résumé](https://github.com/R-M77/Resume/blob/main/Resume_Armin_Eshaghi.pdf)
 
-[Watch a robot track a cell](#-vision-guided-microsurgery) · [Cast YouTube to an old TV](#-jetsoncast) · [Inspect a tensor fusion](#mlir-cost-model-lab)
+## Vision-guided microsurgery
 
-## 🔬 Vision-guided microsurgery
+During my M.A.Sc. at the University of Toronto, I developed image-processing methods to locate features in 3D and a feedback controller to guide the robot’s tools. In the microscope footage, the green box tracks the tool tip as it approaches the cell.
 
-A cell moves under the microscope. How does the robot keep its tool on target? During my **M.A.Sc. at the University of Toronto**, I developed image-processing methods to locate features in 3D and a controller that used visual feedback to guide the micromanipulators. In the clip, watch the tracking overlays as the tools approach the cell.
+<a href="https://github.com/R-M77/R-M77/blob/main/assets/microsurgery.gif"><img src="assets/microsurgery-still.png" width="560" alt="Microscope frame showing a cell on the left and a tracked tool tip approaching from the right."></a>
 
-<a href="https://github.com/R-M77/Automated_Microsurgery">
-  <img src="assets/microsurgery.gif" alt="Real microscope footage from my single-cell surgery research, showing the cell, micromanipulators, and visual-tracking overlays" width="100%">
-</a>
+[Watch the six-second tracking clip](https://github.com/R-M77/R-M77/blob/main/assets/microsurgery.gif) · [Read the research paper](https://www.inderscience.com/info/inarticle.php?artid=118413)
 
-[Supplementary Video 1 (MP4)](https://raw.githubusercontent.com/R-M77/Automated_Microsurgery/main/Supplementary%20Video%201.mp4) · [First-author paper](https://www.inderscience.com/info/inarticle.php?artid=118413) · [All four experiments](https://github.com/R-M77/Automated_Microsurgery) · [Still frame](assets/microsurgery-still.png)
+## Selected engineering projects
 
-## 📺 JetsonCast
+### Estimating tensor memory traffic
 
-My old TV had an HDMI input and no YouTube app. I plugged in a **Jetson Orin Nano** so I could pick a video on my phone and play it on the TV. VacuumTube provides YouTube playback, casting discovery and ad blocking. I built the Linux setup, TV audio routing and idle screensavers around it. Jet, the little lynx in the demo, turns up if you enable fun mode.
+I built **MLIR Cost Model Lab**, a Python tool for comparing tensor fusion plans. In the included example, fusing bias addition with ReLU eliminates an intermediate write and read. Estimated memory traffic drops from **248 to 184 bytes** for the same 64 scalar operations.
 
-<a href="https://github.com/R-M77/JetsonCast"><img src="https://raw.githubusercontent.com/R-M77/JetsonCast/main/assets/previews/banner.gif" width="560" alt="JetsonCast connects a Linux PC to an older TV for YouTube casting, with an optional lynx on the idle screensaver"></a>
+[Run the fusion example](https://github.com/R-M77/mlir-cost-model-lab#run-a-reproducible-example)
 
-[Get JetsonCast](https://github.com/R-M77/JetsonCast) · [Watch the animated demo](https://raw.githubusercontent.com/R-M77/JetsonCast/main/assets/previews/demo.gif) · [Landscape MP4](https://raw.githubusercontent.com/R-M77/JetsonCast/main/assets/previews/demo-landscape.mp4) · [Vertical clip (MP4)](https://raw.githubusercontent.com/R-M77/JetsonCast/main/assets/previews/demo-vertical.mp4) · [Device guides](https://github.com/R-M77/JetsonCast/tree/main/devices)
+### Bringing YouTube casting to an older TV
 
-## MLIR Cost Model Lab
+My TV had HDMI but no YouTube app, so I built **JetsonCast** around a Jetson Orin Nano. VacuumTube handles playback and casting. I built the Linux setup, routed audio to the TV, and added idle screensavers.
 
-How much memory traffic does fusing two operations save? I built a Python tool to trace tensor shapes, count reads and writes, and compare fusion plans. In one example, a matrix multiply feeds a bias addition and then ReLU.
+[Explore JetsonCast and its setup guide](https://github.com/R-M77/JetsonCast#quick-start)
 
-| Model result | Separate operations | Fuse bias and ReLU |
-| --- | ---: | ---: |
-| Logical bytes read and written | 248 | 184 |
-| Scalar operations | 64 | 64 |
+## More of my work
 
-Fusion skips one intermediate write and read. These are static estimates from the graph. The Python example produces both reports, so you can change the shapes and compare them yourself.
+- [RFID data capture in C++](https://github.com/R-M77/AMBIENT_video_capture/blob/dev/G_test.cpp) — I used the FEIG SDK to discover USB readers, inventory tags, and log timestamped identifiers to CSV.
+- [Context-aware scheduling in TypeScript](https://github.com/R-M77/openclaw/tree/feat/main-session-agent-turn) — I prototyped a way for scheduled OpenClaw jobs to reuse the main session’s conversation context.
+- [Research publications](https://github.com/R-M77/Resume/blob/main/Publications.md) — my thesis and papers on vision-based control for single-cell surgery.
 
-[Run the example](https://github.com/R-M77/mlir-cost-model-lab#run-a-reproducible-example) · [Inspect the input graph](https://github.com/R-M77/mlir-cost-model-lab/blob/main/examples/matmul_bias_relu.json) · [Model assumptions](https://github.com/R-M77/mlir-cost-model-lab/blob/main/docs/reference.md)
-
-## Other engineering work
-
-- **Context-aware scheduling in TypeScript.** I prototyped a way for an OpenClaw scheduled job to reuse the main session’s conversation context, with validation at the CLI and service boundaries. [Implementation](https://github.com/R-M77/openclaw/tree/feat/main-session-agent-turn) · [Upstream proposal](https://github.com/openclaw/openclaw/pull/31827)
-- **RFID reader integration in C++.** I used the FEIG SDK to discover USB readers, inventory tags and write timestamped identifiers to CSV for downstream analysis. [Reader prototype](https://github.com/R-M77/AMBIENT_video_capture/blob/dev/G_test.cpp)
-
-**Tools I work with** · C and C++ for embedded software, Python and OpenCV for vision, PyTorch and TensorFlow for ML, and Linux for integration.
-
-I’m especially interested in embedded vision and ML systems roles where I can work on inference, memory use and latency on real hardware.
-
-[Résumé](https://github.com/R-M77/Resume/blob/main/Resume_Armin_Eshaghi.pdf) · [LinkedIn](https://www.linkedin.com/in/armineshaghi) · [Publications](https://github.com/R-M77/Resume/blob/main/Publications.md)
+I’m interested in embedded vision and ML systems roles focused on inference latency and memory use on real hardware. [Connect with me on LinkedIn](https://www.linkedin.com/in/armineshaghi).
