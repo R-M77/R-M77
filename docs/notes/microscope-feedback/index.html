@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>What a robot sees as its tool approaches a cell · Armin Eshaghi</title>
+<meta name="description" content="Six seconds of real microscope footage show how visual feedback guides a robotic tool. Armin Eshaghi explains the tracking overlay from his University of Toronto research.">
+<link rel="canonical" href="https://r-m77.github.io/R-M77/notes/microscope-feedback/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="What a robot sees as its tool approaches a cell">
+<meta property="og:description" content="Watch the green tracking box in a six-second microscope recording from my vision-guided robotics research.">
+<meta property="og:url" content="https://r-m77.github.io/R-M77/notes/microscope-feedback/">
+<meta property="og:image" content="https://raw.githubusercontent.com/R-M77/R-M77/eccb87a8998a4218eb37926b20db4af782704e03/assets/microsurgery-still.png">
+<meta property="og:image:alt" content="The microscope shows a cell on the left and a green tracking box around the approaching tool tip.">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{color-scheme:light dark;--bg:#fff;--ink:#20262b;--sub:#505c63;--accent:#17672e;--rule:#c7d2ca}
+@media(prefers-color-scheme:dark){:root{--bg:#0d1117;--ink:#e6edf3;--sub:#a9b5bc;--accent:#92e798;--rule:#48574d}}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font:1.06rem/1.6 system-ui,sans-serif}
+main{max-width:46rem;margin:clamp(2rem,6vw,4rem) auto;padding:0 1.25rem}
+h1{font-size:clamp(2rem,5.7vw,3.25rem);line-height:1.08;letter-spacing:-.035em;margin:0 0 .8rem;text-wrap:balance}
+h2{font-size:1.4rem;line-height:1.25;margin-top:2rem} a{color:var(--accent);text-underline-offset:.19em}
+address,figcaption{font-style:normal;font-size:.94rem;color:var(--sub)}figure{margin:1.5rem 0}
+video{width:100%;height:auto;display:block;border:1px solid var(--rule);border-radius:5px;background:#111}
+figcaption{margin-top:.5rem} footer{margin-top:2rem;border-top:1px solid var(--rule);padding-top:.8rem}
+</style>
+</head>
+<body><main><article>
+<header><h1>What a robot sees as its tool approaches a cell</h1>
+<address>Armin Eshaghi · University of Toronto M.A.Sc. research</address></header>
+<p>Watch the tip entering from the right. At first, it sits below the red target on the cell. It moves into line, then closes the gap. The green rectangle is the tracker’s estimate of where the tip is in the microscope image.</p>
+<figure><video controls playsinline preload="metadata" width="480" height="216" aria-label="Six-second microscope recording of a tracked tool approaching a cell" poster="https://raw.githubusercontent.com/R-M77/R-M77/eccb87a8998a4218eb37926b20db4af782704e03/assets/microsurgery-still.png" src="../../microsurgery-clip.mp4"></video>
+<figcaption>Six seconds from Supplementary Video 1, at the original playback speed. The red and green overlays are part of the experiment recording.</figcaption></figure>
+<h2>How an image becomes a correction</h2>
+<p>For my master’s research, I developed methods to locate cell features in three dimensions and guide the micromanipulators with visual feedback. A stack of microscope images taken at different depths helps locate the feature. During motion, fresh images let the controller compare the observed positions of the tool and its target and correct the tool’s movement.</p>
+<p>Replay the first few seconds and follow the space between the red target and the front of the green box. That gap gives you a visible part of the alignment problem. The paper describes how depth enters the system and reports the experimental results.</p>
+<p><a href="https://github.com/R-M77/Automated_Microsurgery">Explore the four experiments on GitHub</a> · <a href="https://www.inderscience.com/info/inarticle.php?artid=118413">Read the research paper</a></p>
+<footer>I also work on embedded vision and ML systems. <a href="https://github.com/R-M77">Follow my work on GitHub</a>.</footer>
+</article></main></body></html>
