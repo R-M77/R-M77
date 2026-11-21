@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project demos · Armin Eshaghi</title>
+<style>
+  :root { color-scheme: light dark; font: 16px/1.5 system-ui, sans-serif; --ink: #20262b; --bg: #fff; --link: #17672e; --line: #b7c5bb; }
+  @media (prefers-color-scheme: dark) { :root { --ink: #e6edf3; --bg: #0d1117; --link: #92e798; --line: #48574d; } }
+  body { margin: 0; color: var(--ink); background: var(--bg); }
+  main { max-width: 56rem; margin: clamp(1rem, 6vh, 4rem) auto; padding: 0 1.25rem; }
+  h1 { font-size: clamp(1.45rem, 4vw, 2rem); line-height: 1.2; margin: 1rem 0; }
+  a { color: var(--link); text-underline-offset: .18em; }
+  #screen img, video { display: block; width: 100%; height: auto; max-height: 70vh; object-fit: contain; }
+  button, select { font: inherit; padding: .4rem .65rem; }
+  .controls { display: flex; align-items: center; flex-wrap: wrap; gap: .6rem; margin: 1rem 0; }
+  select { max-width: 100%; }
+  details { margin-top: 1rem; }
+</style>
+</head>
+<body>
+<main>
+<a href="https://github.com/R-M77">Back to GitHub profile</a>
+<h1 id="title">Project demos</h1>
+<div id="screen"></div>
+<p id="message" role="status"></p>
+<div class="controls">
+  <button id="motion" type="button" hidden>Stop animation</button>
+  <label for="media">View</label>
+  <select id="media"></select>
+</div>
+<a id="project" href="https://github.com/R-M77">View project on GitHub</a>
+<noscript><p>JavaScript is required to switch demos. The JetsonCast demo is available below.</p><video controls playsinline preload="metadata" src="https://raw.githubusercontent.com/R-M77/JetsonCast/b7670309d9d972963afda0f91640bddec4719c20/assets/previews/demo-landscape.mp4"></video></noscript>
+</main>
+<script>
+const profile = "https://github.com/R-M77";
+const figures = "https://raw.githubusercontent.com/R-M77/R-M77/7ad374fc76df6e9be84e64babf191e941b96c462/assets/";
+const jetson = "https://raw.githubusercontent.com/R-M77/JetsonCast/b7670309d9d972963afda0f91640bddec4719c20/assets/previews/";
+const items = {
+  banner: {title:"Profile banner", image:"hello.gif", still:"hello-still.png", alt:"Armin Eshaghi — AI/ML systems engineer. From models to machines.", repo:"R-M77"},
+  control: {title:"Microsurgery feedback loop", figure:"control-loop", alt:"Live microscope footage shows the controller tracking tool position and correcting its motion.", repo:"Automated_Microsurgery"},
+  clip: {title:"Microscope tracking clip", video:"./microsurgery-clip.mp4", repo:"Automated_Microsurgery"},
+  fusion: {title:"Tensor fusion and memory traffic", figure:"tensor-fusion", alt:"Fusing bias addition with ReLU removes a store and load, reducing modeled traffic from 248 to 184 bytes.", repo:"mlir-cost-model-lab"},
+  cast: {title:"JetsonCast signal path", figure:"jetsoncast", alt:"The phone sends cast commands to the Jetson, which sends video and audio to the TV.", repo:"JetsonCast"},
+  jetson: {title:"JetsonCast · 27-second demo", video:jetson+"demo-landscape.mp4", repo:"JetsonCast"},
+  vertical: {title:"JetsonCast · vertical demo", video:jetson+"demo-vertical.mp4", repo:"JetsonCast"}
+};
+const media = document.querySelector("#media");
+const title = document.querySelector("#title");
+const screen = document.querySelector("#screen");
+const message = document.querySelector("#message");
+const motion = document.querySelector("#motion");
+const project = document.querySelector("#project");
+for (const [id,item] of Object.entries(items)) media.add(new Option(item.title,id));
+function loadItem() {
+  const key = new URLSearchParams(location.search).get("play");
+  const selected = Object.hasOwn(items,key) ? key : "banner";
+  const item = items[selected];
+  media.value = selected;
+  title.textContent = item.title;
+  document.title = item.title+" · Armin Eshaghi";
+  project.href = profile+"/"+item.repo;
+  screen.replaceChildren();
+  message.textContent = "";
+  motion.hidden = Boolean(item.video);
+  if (item.video) {
+    const video = document.createElement("video");
+    video.controls = true;
+    video.playsInline = true;
+    video.muted = true;
+    video.setAttribute("aria-label",item.title);
+    video.preload = "metadata";
+    video.addEventListener("error",()=>{message.textContent="The video could not load. Reload to try again."});
+    video.src = item.video;
+    screen.append(video);
+    video.play().catch(()=>{if(video.isConnected && !video.error) message.textContent="Press Play in the video controls."});
+    video.addEventListener("playing",()=>{message.textContent=""});
+    return;
+  }
+  const compact = matchMedia("(max-width: 550px)").matches ? "-compact" : "";
+  const animated = figures+(item.image || "figures/"+item.figure+compact+".svg");
+  const still = figures+(item.still || "figures/"+item.figure+compact+"-still.svg");
+  const image = new Image();
+  image.alt = item.alt;
+  screen.append(image);
+  let playing = Boolean(key) || !matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function render() {
+    image.src = playing ? animated : still;
+    motion.textContent = playing ? "Stop animation" : "Play animation";
+  }
+  motion.onclick = ()=>{playing=!playing;render()};
+  render();
+}
+media.onchange = ()=>{
+  const url=new URL(location.href);
+  url.searchParams.set("play",media.value);
+  history.pushState(null,"",url);
+  loadItem();
+};
+window.addEventListener("popstate",loadItem);
+loadItem();
+</script>
+</body>
+</html>
