@@ -41,7 +41,7 @@ const items = {
   control: {title:"Microsurgery feedback loop", figure:"control-loop", alt:"Live microscope footage shows the controller tracking tool position and correcting its motion.", repo:"Automated_Microsurgery"},
   clip: {title:"Microscope tracking clip", video:"./microsurgery-clip.mp4", repo:"Automated_Microsurgery"},
   fusion: {title:"Tensor fusion and memory traffic", figure:"tensor-fusion", alt:"Fusing bias addition with ReLU removes a store and load, reducing modeled traffic from 248 to 184 bytes.", repo:"mlir-cost-model-lab"},
-  gait: {title:"Gait capture for fall detection in an elder care home", figure:"gait-capture", alt:"A full walking stride repeats. Four camera frames sample the stride, and a moving point traces the bend of the highlighted knee.", sourceUrl:"https://github.com/R-M77/Resume/blob/main/Resume_Armin_Eshaghi.pdf", sourceLabel:"Read the Toronto Rehab experience in my résumé"},
+  gait: {title:"Gait capture for fall detection in an elder care home", figure:"gait-capture", alt:"A full walking stride repeats. Four camera frames sample the stride, and a moving point traces the bend of the highlighted knee.", repo:"gait-capture-demo", figureBase:"https://raw.githubusercontent.com/R-M77/gait-capture-demo/ea5c6bf5fd6c70b6c73ec5ebce3fe66ed96d8c96/figures/"},
   cast: {title:"JetsonCast signal path", figure:"jetsoncast", alt:"The phone sends cast commands to the Jetson, which sends video and audio to the TV.", repo:"JetsonCast"},
   jetson: {title:"JetsonCast · 27-second demo", video:jetson+"demo-landscape.mp4", repo:"JetsonCast"},
   vertical: {title:"JetsonCast · vertical demo", video:jetson+"demo-vertical.mp4", repo:"JetsonCast"}
@@ -60,8 +60,8 @@ function loadItem() {
   media.value = selected;
   title.textContent = item.title;
   document.title = item.title+" · Armin Eshaghi";
-  project.href = item.sourceUrl || profile+"/"+item.repo;
-  project.textContent = item.sourceLabel || "View project on GitHub";
+  project.href = profile+"/"+item.repo;
+  project.textContent = "View project on GitHub";
   screen.replaceChildren();
   message.textContent = "";
   motion.hidden = Boolean(item.video);
@@ -80,8 +80,9 @@ function loadItem() {
     return;
   }
   const compact = matchMedia("(max-width: 550px)").matches ? "-compact" : "";
-  const animated = figures+(item.image || "figures/"+item.figure+compact+".svg");
-  const still = figures+(item.still || "figures/"+item.figure+compact+"-still.svg");
+  const figureBase = item.figureBase || figures+"figures/";
+  const animated = item.image ? figures+item.image : figureBase+item.figure+compact+".svg";
+  const still = item.still ? figures+item.still : figureBase+item.figure+compact+"-still.svg";
   const image = new Image();
   image.alt = item.alt;
   screen.append(image);
