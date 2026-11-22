@@ -22,13 +22,13 @@ I built a Python cost model to trace where tensor programs move data. In this ex
 
 [Play the fusion animation](https://r-m77.github.io/R-M77/?play=fusion) · [Run the example](https://github.com/R-M77/mlir-cost-model-lab#run-a-reproducible-example) · [Walk through the byte counts](https://gist.github.com/R-M77/d473a24becf85af5ce83941cb51230c2)
 
-## Synchronized gait capture at Toronto Rehab
+## Gait capture for fall detection in an elder care home
 
-At Toronto Rehab (UHN), I synchronized cameras and motion sensors so we could examine the same moment in a person’s stride. I integrated the hardware triggers with the C++ and Python capture software and built an OpenCV pipeline for gait analysis and fall-prediction research.
+At Toronto Rehab (UHN), I built a gait capture system and implemented it at an elder care home for fall-detection research. I used hardware triggers to synchronize camera frames with motion-sensor readings, then analyzed the recordings with OpenCV.
 
-<a href="https://r-m77.github.io/R-M77/?play=gait"><picture><source media="(max-width: 550px) and (prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/R-M77/R-M77/ffacf42ffdae630c3e8061a1d3ea63cb0231bb8d/assets/figures/gait-capture-compact-still.svg"><source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/R-M77/R-M77/ffacf42ffdae630c3e8061a1d3ea63cb0231bb8d/assets/figures/gait-capture-still.svg"><source media="(max-width: 550px)" srcset="https://raw.githubusercontent.com/R-M77/R-M77/ffacf42ffdae630c3e8061a1d3ea63cb0231bb8d/assets/figures/gait-capture-compact.svg"><img src="https://raw.githubusercontent.com/R-M77/R-M77/ffacf42ffdae630c3e8061a1d3ea63cb0231bb8d/assets/figures/gait-capture.svg" width="724" alt="Schematic of a walking stride and three aligned timing tracks for camera frames, motion-sensor samples, and a hardware trigger."></picture></a>
+[Play the illustrated stride](https://r-m77.github.io/R-M77/?play=gait) · [Toronto Rehab experience in my résumé](https://github.com/R-M77/Resume/blob/main/Resume_Armin_Eshaghi.pdf)
 
-[Play the timing illustration](https://r-m77.github.io/R-M77/?play=gait) · [Read about my work at Toronto Rehab](https://github.com/R-M77/Resume/blob/main/Resume_Armin_Eshaghi.pdf)
+<a href="https://r-m77.github.io/R-M77/?play=gait"><picture><source media="(max-width: 550px) and (prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/R-M77/R-M77/cd5552cf2a05dbf1cc6c1d2500a9d9362c71f230/assets/figures/gait-capture-compact-still.svg"><source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/R-M77/R-M77/cd5552cf2a05dbf1cc6c1d2500a9d9362c71f230/assets/figures/gait-capture-still.svg"><source media="(max-width: 550px)" srcset="https://raw.githubusercontent.com/R-M77/R-M77/cd5552cf2a05dbf1cc6c1d2500a9d9362c71f230/assets/figures/gait-capture-compact.svg"><img src="https://raw.githubusercontent.com/R-M77/R-M77/cd5552cf2a05dbf1cc6c1d2500a9d9362c71f230/assets/figures/gait-capture.svg" width="724" alt="A full walking stride repeats. Four camera frames sample the stride, and a moving point traces the bend of the highlighted knee."></picture></a>
 
 ## JetsonCast for older TVs
 
